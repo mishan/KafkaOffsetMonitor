@@ -48,8 +48,7 @@ This is a small webapp, you can run it locally or on a server, as long as you ha
 ```
 java -cp KafkaOffsetMonitor-assembly-0.2.1.jar \
      com.quantifind.kafka.offsetapp.OffsetGetterWeb \
-     --offsetStorage kafka
-     --zk zk-server1,zk-server2 \
+     --zk zk-server1/kafka,zk-server2/kafka \
      --port 8080 \
      --refresh 10.seconds \
      --retain 2.days
